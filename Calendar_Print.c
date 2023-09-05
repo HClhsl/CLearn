@@ -50,7 +50,7 @@ void print_calendar(int year,int month){
     int a[12]={31,28,31,30,31,30,31,31,30,31,30,31};
     int sum= year_data_sum(year)+ month_data_sum(year,month);
     int week=sum%7;
-    printf("===========%d.%d============\n",year,month);
+    printf("==========%d.%2d===========\n",year,month);
     printf(" Mon Tue Wen Thu Fri Sat Sun\n");
     while(week){
         printf("    ");
@@ -65,7 +65,7 @@ void print_calendar(int year,int month){
             printf("\n");
         }
     }
-    printf("\n----------------------------\n");
+    printf("\n============================\n");
 }
 
 // 1900.1.1是星期一
